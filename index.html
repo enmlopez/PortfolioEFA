@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio EFA</title>
 
+    <link rel="icon" type="image/png" href="./img/Creature_Monster_edited.png">
+
     <!--bootstrap css file-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
@@ -26,38 +28,9 @@
 
 <body>
 
-
     <!-- =========================================Start Header Area ==================================== -->
 
     <header class="header_area">
-        <!-- <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-logo" href="#"><img src="./img/33373-1-mountains-clipart.png" width="100" height="60"
-                        alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> -->
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#"><img src="./img/33373-1-mountains-clipart.png" width="100" height="60"
                     alt="brand"></a>
@@ -95,8 +68,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-12 banner-image">
-                        <!-- <img src="./img/peru_macchu_picchu_edited.png" alt="In_Training"
-                            class="img-fluid"> -->
                     </div>
                     <div class="col-lg-5 col-md-12 site-title">
                         <h3 class="white-text">Welcome!</h3>
@@ -104,9 +75,9 @@
                         <h4 class="white-text text-uppercase">Software Developer in training</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase"><a href="https://github.com/enmlopez">Witness me</a></button>
-                                <button type="button"
-                                    class="btn button secondary-button text-uppercase">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase"><a
+                                        href="https://github.com/enmlopez">Witness me</a></button>
+                                <button type="button" class="btn button secondary-button text-uppercase">
                                     <a href="#contact">Contact</a></button>
                             </div>
                         </div>
@@ -152,8 +123,7 @@
                                 rigorous program I have been able to attain a solid foundation in C# and HTML. Using
                                 Microsoft.NET technologies as well as N-tier architectural patterns like MVC to build
                                 multi-platform websites and applications. I am constantly looking for opportunities to
-                                better my knowledge and increase my expertise to
-                                become a better developer.
+                                better my knowledge and increase my expertise to become a better developer.
                             </p>
                             <p class="para">
                                 It is my belief that through hard work and determination, any goal set forth can be
@@ -162,14 +132,13 @@
                                 The future depends on what you do today - Gandhi.
                             </p>
                         </div>
-                        <buttom id="button" class="btn button primary-button text-uppercase">Resume</buttom>
+                        <buttom id="button" class="btn button primary-button text-uppercase">
+                            <a href="./pdf/EnriqueLopezResume2019.pdf">Resume</a>
+                        </buttom>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
 
         <!-- =========================================End About Area ==================================== -->
 
@@ -184,7 +153,6 @@
             </ul>
         </section>
         <!-- =========================================End Slide Area #2 ==================================== -->
-
 
         <!-- =========================================Start Projects Area ==================================== -->
         <section id="project" class="project-area">
@@ -245,7 +213,6 @@
         </section>
 
         <!-- =========================================End Projects Area ==================================== -->
-
 
         <!-- =========================================Start Test Project Area ==================================== -->
 
@@ -346,7 +313,8 @@
 
         <!-- =========================================End Test Project Area ==================================== -->
 
-        <!-- modify this form HTML and place wherever you want your form -->
+        <!-- =========================================Start Contact Area ==================================== -->
+
         <section id="contact" class="contact-area">
             <div class="container text-center">
                 <div class="col-lg-12 col-md-12 col-sm-6 about-title">
@@ -373,12 +341,30 @@
                 </div>
             </div>
             </div>
-
         </section>
+        <!-- =========================================End Contact Area ==================================== -->
 
     </main>
     <!-- =========================================End Main Area ==================================== -->
 
+    <!-- =========================================Start Footer Area ==================================== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="social text-center">
+                    <a href="https://www.linkedin.com/in/enrique-lopez-85b3b8202/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/enmlopez"><i class="fab fa-github-square"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        © Enrique Lopez 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================End Footer Area ==================================== -->
 
     <!-- Formspree AJAX file -->
 
@@ -426,26 +412,26 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 5000); // Change image every 2 seconds
+            setTimeout(carousel, 5000);
         }
     </script>
 
-<script>
-    var myIndex2 = 0;
-    carousel2();
+    <script>
+        var myIndex2 = 0;
+        carousel2();
 
-    function carousel2() {
-        var y;
-        var z = document.getElementsByClassName("mySlides2");
-        for (y = 0; y < z.length; y++) {
-            z[y].style.display = "none";
+        function carousel2() {
+            var y;
+            var z = document.getElementsByClassName("mySlides2");
+            for (y = 0; y < z.length; y++) {
+                z[y].style.display = "none";
+            }
+            myIndex2++;
+            if (myIndex2 > z.length) { myIndex2 = 1 }
+            z[myIndex2 - 1].style.display = "block";
+            setTimeout(carousel2, 5000);
         }
-        myIndex2++;
-        if (myIndex2 > z.length) { myIndex2 = 1 }
-        z[myIndex2 - 1].style.display = "block";
-        setTimeout(carousel2, 5000); // Change image every 2 seconds
-    }
-</script>
+    </script>
 
 </body>
 
