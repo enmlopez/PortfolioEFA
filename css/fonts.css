@@ -1,0 +1,11 @@
+/*@font-face*/
+
+@font-face {
+    font-family: "Neucha";
+    src: url('../fonts/Neucha/Neucha-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Pangolin";
+    src:url('../fonts/Pangolin/Pangolin-Regular.ttf');
+}

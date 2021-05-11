@@ -1,0 +1,207 @@
+/*import fonts form fonts.css file*/
+@import url(./fonts.css);
+
+/* import css varibles */
+@import url(./partials/_variables.css);
+
+/* import global files */
+@import url(./partials/_global.css);
+
+/* start navigation */
+.navbar-brand{
+    position:relative;
+    z-index: 2;
+}
+
+.navbar{
+    padding: 0 .5rem;
+    top: 0; left: 0; right: 0;
+    position:fixed;
+    z-index: 1030;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-link{
+    /* font:normal 500 15px/2px var(--neucha); shorthand for various styles below*/
+    font-family:var(--pangolin);
+    text-transform: uppercase;
+    font-weight:500;
+    font-size:1.2rem;
+    padding:1.7rem;
+    color:var(--title-color);
+}
+
+.active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+}
+
+.navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+}
+
+/* end navigation */
+
+/* slide area */
+
+.flexslider {
+    margin: 0 0 60px;
+    border: 4px solid #313C35;
+}
+.flexslider, .slides>li{
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides>li {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.slides, .slides > li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mySlides{
+    display:none;
+    width: 100%;
+}
+
+.mySlides2{
+    display:none;
+    width: 100%;
+}
+
+
+/* end slide area */
+
+
+/* banner area */
+.site-banner{
+    background: url('../img/peru_macchu_picchu_test.png') no-repeat /*fixed 100%*/;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+    background-position: center center;
+    /* background-position: 0% 65%; */
+   /*either y or above position - remove it if dont want gradient effect*/
+    /* background-size:75rem 34rem;  cover the entire right side?*/ 
+}
+
+.site-title h3{
+    padding-top:35%;
+    font-weight: 500;;
+}
+
+/* .site-title h3::after{
+    content:" ";
+    height: 2px;
+    width: 18vw;
+    background:black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+} */
+
+.site-title h1{
+    font-size:5rem;
+}
+
+.site-title h4{
+    font-size: 1.5rem;
+} 
+
+.banner-image > img{ /*Remove this if prefer not to move unedited image position and size*/
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color:teal;
+    border-radius:5px;
+}
+/* End banner area */
+
+/* Start About area */
+
+.about-area{
+    padding: 8rem 5rem;
+}
+
+.about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px var(--pangolin);
+    letter-spacing: 15px;
+}
+
+.paragraph>p{
+    padding: .4rem 0;
+}
+
+/* End About Area */
+
+/* Start Project Area */
+
+.site-main .project-area{
+    padding:1rem 5rem;
+    margin-bottom:4rem;
+}
+
+.site-main .project-area .row .col-lg-4{
+    display:flex;
+    justify-content:center;
+}
+
+.col-lg-4 > .single-project{
+    border:10px solid var(--border-color);
+    text-align:center;
+    padding: .5rem 0.5rem;
+    margin: .9rem 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.col-lg-4 > .single-project > img{
+    width: 100%;
+}
+
+.single-project:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.single-project:hover > img{
+    filter:brightness(1.5)
+}
+
+/* End Project Area */
+
+/* Start Contact Area */
+.contact-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.contact-area .container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.form-group{
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
+}
+
+/* End Contact Area */
