@@ -18,6 +18,40 @@
     .site-main .project-area .title-text h2{
         position: relative;
     }
+
+    
+.flexslider {
+    margin: 0 0 60px;
+    border: 4px solid #313C35;
+}
+.flexslider, .slides>li{
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides>li {
+    background-size:contain;
+    background-position: center center;
+    background-repeat:no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.slides, .slides > li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mySlides{
+    display:block;
+    width: 100%;
+}
+
+.mySlides2{
+    display:block;
+    width: 100%;
+}
 }
 
 @media only screen and(max-width:768px){
