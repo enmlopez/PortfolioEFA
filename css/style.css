@@ -282,7 +282,7 @@ p.para{
     margin: .9rem 0;
     width: 100%;
     height: auto;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: transform .4s ease;
 }
 .col-lg-4 > .single-project > img{
