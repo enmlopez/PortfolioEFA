@@ -18,15 +18,6 @@
     .site-main .project-area .title-text h2{
         position: relative;
     }
-
- 
-    .slides>li {
-    background-size:contain;
-    background-position: center center;
-    margin: 0;
-    padding: 0;
-    }
-
 }
 
 @media only screen and(max-width:768px){
